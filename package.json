@@ -12,7 +12,7 @@
 		"build-storybook": "storybook build",
 		"type-check": "tsgo --noEmit",
 		"prepare": "husky",
-    "check": "biome check"
+    "check": "biome check --write"
 	},
 	"dependencies": {
 		"@typescript/native-preview": "7.0.0-dev.20250911.1",

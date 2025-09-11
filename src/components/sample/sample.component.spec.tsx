@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Sample } from "./sample.component";
 
 describe("Sample", () => {
@@ -8,5 +8,10 @@ describe("Sample", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it.todo("renders correctly");
+  it("renders the correct text", () => {
+    render(<Sample />);
+    expect(
+      screen.getByRole("heading", { name: /sample header/i })
+    ).toBeInTheDocument();
+  });
 });

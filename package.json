@@ -12,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@typescript/native-preview": "7.0.0-dev.20250911.1",
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"

@@ -10,8 +10,7 @@ describe("Sample", () => {
 
   it("renders the correct text", () => {
     render(<Sample />);
-    expect(
-      screen.getByRole("heading", { name: /sample header/i })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /header/i })).toBeVisible();
+    expect(screen.getByText(/paragraph text./i)).toBeVisible();
   });
 });

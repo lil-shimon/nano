@@ -31,8 +31,12 @@
 - **Commits:** Imperative, present tense, one change per commit. Examples from history: “Add Vitest as development dependency”, “Remove default favicon”.
 - **PRs:** Provide a clear summary, linked issues (`Fixes #123`), screenshots/GIFs for UI, and verification notes. Ensure `pnpm build` and `pnpm lint` pass.
 
+## Metrics & Observability
+- **Web Vitals:** Track LCP/CLS/INP using the `web-vitals` package in client components. Record to your analytics backend.
+- **Instrumentation:** Add `src/instrumentation.ts` with `export async function register()` to wire OpenTelemetry exporters (traces/metrics) in the App Router.
+- **Profiling:** Use `pnpm dev` + React Profiler for interactive checks; capture repeatable results via Lighthouse CI when possible.
+
 ## Security & Configuration Tips
 - **Secrets:** Never commit secrets. Use `.env.local` for local overrides (git‑ignored).
 - **Assets:** Keep large binaries out of git; place static files in `public/`.
 - **Deps:** Prefer small, well‑maintained packages; run `pnpm install` to update the lockfile consistently.
-

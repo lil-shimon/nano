@@ -6,7 +6,7 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"includes": ["src/**/*.{js,jsx,ts,tsx,json,css,md}"]
+		"includes": ["**", "!node_modules", "!dist", "!.next"]
 	},
 	"formatter": {
 		"enabled": true,

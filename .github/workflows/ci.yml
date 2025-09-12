@@ -25,3 +25,5 @@ jobs:
         run: pnpm test
       - name: Run typecheck
         run: pnpm type-check
+      - name: Run lint
+        run: pnpm lint

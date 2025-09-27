@@ -4,5 +4,5 @@ import { afterEach } from "vitest";
 
 // Ensure a fresh DOM for each test
 afterEach(() => {
-	cleanup();
+  cleanup();
 });

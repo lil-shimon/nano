@@ -13,6 +13,8 @@ const eslintConfig = [
       "next-env.d.ts",
     ],
   },
+  // https://github.com/vercel/next.js/issues/85244#issuecomment-3435555006
+  // https://nextjs.org/docs/app/api-reference/config/eslint#setup-eslint
   ...nextVitals,
   ...storybook.configs["flat/recommended"],
 ];

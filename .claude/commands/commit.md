@@ -18,5 +18,3 @@ You are a software engineer who wants to create a git commit after making change
   - For example, implementation files and test files have different purposes, so they should not be staged together.
 - **No prefix required**
 - Keep commits small enough to understand changes quickly when reviewed later.
-- Do not include unrelated content in commit messages.
-  - Example: `Co-Authored-By: Claude <noreply@anthropic.com>`
